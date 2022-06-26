@@ -3,7 +3,6 @@
 }
 
 body {
-  height: 100vh;
   background-image: url('images/bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -56,5 +55,8 @@ body {
 @media (max-width: 767.98px) {
   .card-game {
     font-size: 30px;
+  }
+  #hearts {
+    font-size: 25px;
   }
 }

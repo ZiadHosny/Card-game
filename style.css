@@ -1,0 +1,60 @@
+* {
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background-image: url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.card-game {
+  font-size: 40px;
+  color: red;
+}
+
+#hearts {
+  color: red;
+  font-size: 35px;
+}
+
+#timer {
+  color: white;
+  font-size: 25px;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.winner {
+  background-image: url('images/winner.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.loser {
+  background-image: url('images/gameOver.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.item {
+  background-image: url('/images/card.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .card-game {
+    font-size: 30px;
+  }
+}

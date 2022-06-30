@@ -97,11 +97,11 @@ function flipCard(e) {
 
   if (firstFlip != secondFilp && secondFilp > -1) {
     setTimeout(() => {
-      card.style = "backgroundImage : url('images/k.png')";
+      card.style = "backgroundImage : url('images/card.png')";
       firstCard.style = "backgroundImage : url('images/card.png')";
       firstFlip = -1;
       secondFilp = -2;
-    }, 700);
+    }, 300);
   }
   if (firstFlip == secondFilp) {
     itemsTaken[items.indexOf(firstCard)] = 'Z';

@@ -3,12 +3,11 @@
 }
 
 body {
-  /* background-image: url('images/bg.jpg');
-  */
+  background-image: url('images/bg.jpg');
   background-color: black;
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; */
+  background-size: cover;
   font-family: 'Gloria Hallelujah', cursive;
 }
 

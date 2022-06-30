@@ -97,7 +97,7 @@ function flipCard(e) {
 
   if (firstFlip != secondFilp && secondFilp > -1) {
     setTimeout(() => {
-      card.style = "backgroundImage : url('images/card.png')";
+      card.style = "backgroundImage : url('images/k.png')";
       firstCard.style = "backgroundImage : url('images/card.png')";
       firstFlip = -1;
       secondFilp = -2;

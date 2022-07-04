@@ -18,7 +18,7 @@ var interval;
 var gameIsOver;
 
 var sec = 0,
-  min = 1;
+  min = 3;
 
 var firstFlip = -1,
   secondFilp = -2,
@@ -133,7 +133,7 @@ function timer() {
       return;
     }
     timerDiv.innerHTML = '0' + min + ' : ' + (sec < 10 ? '0' + sec : sec);
-  }, 10);
+  }, 1000);
 }
 
 function hint() {
@@ -180,15 +180,14 @@ function gameOver() {
   hintBtn.style.setProperty('pointer-events', 'none');
   clearInterval(interval);
   parent.innerHTML = '';
-  body.classList.add('winner');
-  // body.classList.add('loser');
+  body.classList.add('loser');
 }
 
 function winner() {
   hintBtn.style.setProperty('pointer-events', 'none');
   clearInterval(interval);
   parent.innerHTML = '';
-  // body.classList.add('winner');
+  body.classList.add('winner');
 }
 
 function newGame() {
@@ -200,7 +199,7 @@ function newGame() {
   itemsTaken = Array.from(Array(24).keys());
   (firstFlip = -1), (secondFilp = -2);
   (hearts = '♥ ♥ ♥'), (heartsDiv.innerHTML = hearts);
-  (sec = 0), (min = 1);
+  (sec = 0), (min = 3);
   (items = []), (parent.innerHTML = '');
   for (var i = 0; i < cards.length; i++) {
     for (var j = 0; j < 2; j++) {

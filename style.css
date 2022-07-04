@@ -4,7 +4,6 @@
 
 body {
   background-image: url('images/bg.jpg');
-  background-color: black;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -34,7 +33,7 @@ body {
 .winner {
   background-image: url('images/winner.gif');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 100vh;
 }
@@ -42,7 +41,7 @@ body {
 .loser {
   background-image: url('images/gameOver.gif');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 100vh;
 }
@@ -62,4 +61,12 @@ body {
   #hearts {
     font-size: 25px;
   }
+  .loser {
+    background-image: url('images/gameOver.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
 }

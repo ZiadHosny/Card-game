@@ -18,7 +18,7 @@ var interval;
 var gameIsOver;
 
 var sec = 0,
-  min = 5;
+  min = 1;
 
 var firstFlip = -1,
   secondFilp = -2,
@@ -199,7 +199,7 @@ function newGame() {
   itemsTaken = Array.from(Array(24).keys());
   (firstFlip = -1), (secondFilp = -2);
   (hearts = '♥ ♥ ♥'), (heartsDiv.innerHTML = hearts);
-  (sec = 0), (min = 5);
+  (sec = 0), (min = 1);
   (items = []), (parent.innerHTML = '');
   for (var i = 0; i < cards.length; i++) {
     for (var j = 0; j < 2; j++) {

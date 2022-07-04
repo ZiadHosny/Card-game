@@ -53,7 +53,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 50px;
-  margin: auto 15;
+  margin: auto 5;
 }
 
 @media (max-width: 767.98px) {
@@ -63,11 +63,9 @@ body {
   #hearts {
     font-size: 25px;
   }
-  .loser {
-    background-image: url('images/gameOver.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
+}
+@media (max-width: 480px) {
+  .item {
+    padding: 35px;
   }
 }

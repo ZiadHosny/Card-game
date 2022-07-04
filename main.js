@@ -180,14 +180,15 @@ function gameOver() {
   hintBtn.style.setProperty('pointer-events', 'none');
   clearInterval(interval);
   parent.innerHTML = '';
-  body.classList.add('loser');
+  body.classList.add('winner');
+  // body.classList.add('loser');
 }
 
 function winner() {
   hintBtn.style.setProperty('pointer-events', 'none');
   clearInterval(interval);
   parent.innerHTML = '';
-  body.classList.add('winner');
+  // body.classList.add('winner');
 }
 
 function newGame() {

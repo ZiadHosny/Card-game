@@ -31,47 +31,47 @@ var cards = [
   },
   {
     id: 1,
-    url: "url('images/a.png')",
+    url: "url('images/lion.png')",
   },
   {
     id: 2,
-    url: "url('images/a.png')",
+    url: "url('images/giraffe.png')",
   },
   {
     id: 3,
-    url: "url('images/a.png')",
+    url: "url('images/zebra.png')",
   },
   {
     id: 4,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
   {
     id: 5,
-    url: "url('images/a.png')",
+    url: "url('images/fox.svg')",
   },
   {
     id: 6,
-    url: "url('images/a.png')",
+    url: "url('images/bee.png')",
   },
   {
     id: 7,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
   {
     id: 8,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
   {
     id: 9,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
   {
     id: 10,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
   {
     id: 11,
-    url: "url('images/a.png')",
+    url: "url('images/whale.png')",
   },
 ];
 

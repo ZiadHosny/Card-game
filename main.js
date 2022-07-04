@@ -27,51 +27,51 @@ var firstFlip = -1,
 var cards = [
   {
     id: 0,
-    url: "url('images/a.png')",
+    url: "url('images/alien.png')",
   },
   {
     id: 1,
-    url: "url('images/lion.png')",
+    url: "url('images/fox.png')",
   },
   {
     id: 2,
-    url: "url('images/giraffe.png')",
+    url: "url('images/fox.png')",
   },
   {
     id: 3,
-    url: "url('images/zebra.png')",
+    url: "url('images/j.png')",
   },
   {
     id: 4,
-    url: "url('images/whale.png')",
+    url: "url('images/joker.png')",
   },
   {
     id: 5,
-    url: "url('images/fox.svg')",
+    url: "url('images/k.png')",
   },
   {
     id: 6,
-    url: "url('images/bee.png')",
+    url: "url('images/man.png')",
   },
   {
     id: 7,
-    url: "url('images/whale.png')",
+    url: "url('images/penguin.png')",
   },
   {
     id: 8,
-    url: "url('images/whale.png')",
+    url: "url('images/q.png')",
   },
   {
     id: 9,
-    url: "url('images/whale.png')",
+    url: "url('images/seven.png')",
   },
   {
     id: 10,
-    url: "url('images/whale.png')",
+    url: "url('images/skull.png')",
   },
   {
     id: 11,
-    url: "url('images/whale.png')",
+    url: "url('images/three.png')",
   },
 ];
 
@@ -133,7 +133,7 @@ function timer() {
       return;
     }
     timerDiv.innerHTML = '0' + min + ' : ' + (sec < 10 ? '0' + sec : sec);
-  }, 1000);
+  }, 100);
 }
 
 function hint() {
@@ -204,7 +204,7 @@ function newGame() {
   for (var i = 0; i < cards.length; i++) {
     for (var j = 0; j < 2; j++) {
       var div = document.createElement('div');
-      div.classList.add('item', 'col-lg-2', 'col-3');
+      div.classList.add('item', 'col-2');
       div.id = cards[i].id;
       div.style.backgroundImage = "url('images/card.png')";
       div.onclick = (e) => {

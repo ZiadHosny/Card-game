@@ -53,6 +53,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 50px;
+  margin: auto 15;
 }
 
 @media (max-width: 767.98px) {

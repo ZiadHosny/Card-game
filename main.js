@@ -27,23 +27,23 @@ var firstFlip = -1,
 var cards = [
   {
     id: 0,
-    url: "url('images/q.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 1,
-    url: "url('images/k.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 2,
-    url: "url('images/j.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 3,
-    url: "url('images/joker.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 4,
-    url: "url('images/seven.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 5,
@@ -51,27 +51,27 @@ var cards = [
   },
   {
     id: 6,
-    url: "url('images/three.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 7,
-    url: "url('images/penguin.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 8,
-    url: "url('images/man.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 9,
-    url: "url('images/fox.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 10,
-    url: "url('images/skull.png')",
+    url: "url('images/a.png')",
   },
   {
     id: 11,
-    url: "url('images/alien.png')",
+    url: "url('images/a.png')",
   },
 ];
 

@@ -66,6 +66,6 @@ body {
 }
 @media (max-width: 480px) {
   .item {
-    padding: 35px;
+    padding: 40px;
   }
 }

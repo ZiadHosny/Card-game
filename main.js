@@ -8,70 +8,70 @@ var parent = document.getElementById('parent');
 var body = document.getElementsByTagName('body')[0];
 
 var heartsDiv = document.getElementById('hearts');
-var hearts = '♥ ♥ ♥';
+let hearts = '♥ ♥ ♥';
 heartsDiv.innerHTML = hearts;
 
-var items = [];
+let items = [];
 var itemsTaken = Array.from(Array(24).keys());
 
 var interval;
 var gameIsOver;
 
-var sec = 0,
+let sec = 0,
   min = 3;
 
-var firstFlip = -1,
+let firstFlip = -1,
   secondFilp = -2,
   firstCard;
 
-var cards = [
+const cards = [
   {
     id: 0,
-    url: "url('images/alien.png')",
+    url: "url('images/king.svg')",
   },
   {
     id: 1,
-    url: "url('images/fox.png')",
+    url: "url('images/ace.svg')",
   },
   {
     id: 2,
-    url: "url('images/fox.png')",
+    url: "url('images/joker.svg')",
   },
   {
     id: 3,
-    url: "url('images/j.png')",
+    url: "url('images/j.svg')",
   },
   {
     id: 4,
-    url: "url('images/joker.png')",
+    url: "url('images/q.svg')",
   },
   {
     id: 5,
-    url: "url('images/k.png')",
+    url: "url('images/seven.svg')",
   },
   {
     id: 6,
-    url: "url('images/man.png')",
+    url: "url('images/three.svg')",
   },
   {
     id: 7,
-    url: "url('images/penguin.png')",
+    url: "url('images/teddybear.svg')",
   },
   {
     id: 8,
-    url: "url('images/q.png')",
+    url: "url('images/penguin.svg')",
   },
   {
     id: 9,
-    url: "url('images/seven.png')",
+    url: "url('images/eid.svg')",
   },
   {
     id: 10,
-    url: "url('images/skull.png')",
+    url: "url('images/alien.svg')",
   },
   {
     id: 11,
-    url: "url('images/three.png')",
+    url: "url('images/ten.svg')",
   },
 ];
 
@@ -97,8 +97,8 @@ function flipCard(e) {
 
   if (firstFlip != secondFilp && secondFilp > -1) {
     setTimeout(() => {
-      card.style = "backgroundImage : url('images/card.png')";
-      firstCard.style = "backgroundImage : url('images/card.png')";
+      card.style = "backgroundImage : url('images/card.svg')";
+      firstCard.style = "backgroundImage : url('images/card.svg')";
       firstFlip = -1;
       secondFilp = -2;
     }, 700);
@@ -106,7 +106,7 @@ function flipCard(e) {
   if (firstFlip == secondFilp) {
     itemsTaken[items.indexOf(firstCard)] = 'Z';
     itemsTaken[items.indexOf(card)] = 'Z';
-    console.log(itemsTaken);
+
     card.style.setProperty('pointer-events', 'none');
     firstCard.style.setProperty('pointer-events', 'none');
     firstFlip = -1;
@@ -116,8 +116,6 @@ function flipCard(e) {
   if (itemsTaken.every((e) => e == 'Z')) {
     winner();
   }
-
-  console.log(firstFlip, secondFilp);
 }
 
 function timer() {
@@ -133,7 +131,7 @@ function timer() {
       return;
     }
     timerDiv.innerHTML = '0' + min + ' : ' + (sec < 10 ? '0' + sec : sec);
-  }, 100);
+  }, 1000);
 }
 
 function hint() {
@@ -155,12 +153,8 @@ function hint() {
   hints[0].style.backgroundImage = cards[hintId].url;
   hints[0].style.setProperty('pointer-events', 'none');
 
-  console.log(items.indexOf(hints[0]), items.indexOf(hints[1]));
-
   itemsTaken[items.indexOf(hints[0])] = 'Z';
   itemsTaken[items.indexOf(hints[1])] = 'Z';
-
-  console.log(itemsTaken);
 
   setTimeout(() => {
     hints[1].style.backgroundImage = cards[hintId].url;
@@ -206,7 +200,7 @@ function newGame() {
       var div = document.createElement('div');
       div.classList.add('item', 'col-2');
       div.id = cards[i].id;
-      div.style.backgroundImage = "url('images/card.png')";
+      div.style.backgroundImage = "url('images/card.svg')";
       div.onclick = (e) => {
         flipCard(e);
       };

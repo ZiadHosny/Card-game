@@ -5,6 +5,7 @@
 body {
   background-image: url('images/bg.jpg');
   background-repeat: no-repeat;
+  background-color: black;
   background-position: center center;
   background-size: cover;
   font-family: 'Gloria Hallelujah', cursive;
@@ -33,7 +34,7 @@ body {
 .winner {
   background-image: url('images/winner.gif');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   height: 100vh;
 }
@@ -41,7 +42,7 @@ body {
 .loser {
   background-image: url('images/gameOver.gif');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   height: 100vh;
 }
@@ -68,5 +69,4 @@ body {
     background-position: center center;
     height: 100vh;
   }
-  
 }

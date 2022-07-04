@@ -133,7 +133,7 @@ function timer() {
       return;
     }
     timerDiv.innerHTML = '0' + min + ' : ' + (sec < 10 ? '0' + sec : sec);
-  }, 1000);
+  }, 10);
 }
 
 function hint() {
